@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Présentation du DOM</title>
+    <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <h1 class="neon">Présentation du DOM by chatGPT</h1>
+            <div class="tagline">Comprendre le DOM</div>
+        </header>
+        <section class="hello">
+            <p>Bienvenue 👋</p>
+        </section>
+        <article>
+            <header class="neon">Contexte historique</header>
+            <p>
+                Le DOM (Document Object Model) a été mis en place en 1998 par le World Wide Web Consortium (W3C). La première version du
+                DOM a été publiée en octobre 1998 et a fourni une spécification pour un modèle de programmation qui permet aux
+                développeurs de manipuler les éléments d'une page web en utilisant un langage de programmation. Cette spécification a
+                été conçue pour être utilisée avec des langages de programmation tels que JavaScript, et est devenue un standard de
+                l'industrie pour la manipulation des documents HTML et XML.
+            </p>
+            <h3 class="neon">Début de la présentation</h3>
+            <p>
+                Le Document Object Model (DOM) est un modèle de programmation qui permet aux développeurs de manipuler
+                les éléments d'une page web en utilisant un langage de programmation. Il agit comme une interface entre
+                le code et le contenu de la page.
+            </p>
+            <p>
+                Le DOM est basé sur une structure arborescente, où chaque élément de la page (comme les balises HTML)
+                est considéré comme un objet avec des propriétés et des méthodes. Les développeurs peuvent utiliser ces
+                propriétés et méthodes pour accéder aux éléments de la page et les manipuler.
+            </p>
+            <p>
+                Il existe des méthodes pour ajouter, supprimer ou modifier les éléments de la page, ainsi que pour
+                accéder aux propriétés de ces éléments, comme leurs styles, leurs attributs et leur contenu. Les
+                développeurs peuvent également utiliser des sélecteurs de type CSS pour cibler spécifiquement les
+                éléments de la page qu'ils souhaitent manipuler.
+            </p>
+            <p>
+                Le DOM est largement utilisé pour créer des interfaces utilisateur interactives et dynamiques, comme les menus
+                déroulants, les galeries d'images et les formulaires. Il est également utilisé pour gérer les interactions utilisateur,
+                comme les clics sur des boutons et les entrées de formulaire. Il est souvent utilisé en conjonction avec JavaScript pour
+                ajouter des fonctionnalités interactives à une page web.
+            </p>
+            <p>
+                Pendant ma présentation sur le sujet, je vais expliquer les concepts de base du DOM, y compris comment il
+                fonctionne, comment il est structuré, et comment les développeurs peuvent utiliser les méthodes et propriétés pour
+                manipuler les éléments de la page. Je montrerais les exemples concrets d'utilisation du DOM pour ajouter des éléments à
+                la page, gérer les événements utilisateur et modifier les styles d'un élément. Je montrerais également comment utiliser
+                les sélecteurs CSS avec le DOM pour cibler des éléments spécifiques de la page.
+            </p>
+            <p>
+                Enfin, je discuterais des utilisations courantes du DOM dans les projets web modernes, notamment les bibliothèques et
+                les frameworks populaires qui facilitent l'utilisation du DOM pour créer des interfaces utilisateur interactives. Je
+                montrerais également des exemples de cas d'utilisation réels pour montrer comment le DOM peut être utilisé pour résoudre
+                des problèmes courants dans les projets web.
+            </p>
+            <p>
+                Voici quelques exemples concrets d'utilisation du DOM :
+                <p>
+                    Sélectionner un élément de la page :
+                    <br>
+                    <code>
+                        Sélectionne le premier élément &lt;p&gt; de la page
+                        const firstParagraph = document.querySelector("p");
+                        <br>
+                        // Modifie le contenu du paragraphe
+                        firstParagraph.textContent = "Nouveau contenu du paragraphe";
+                    </code>
+                </p>
+            </p>
+            <p>
+                Ajouter un élément à la page :
+                <code>
+                    //Sélectionne l'élément parent où vous voulez ajouter un nouvel élément
+                    const parentElement = document.querySelector("#parent-id");
+                    
+                        Crée un nouvel élément <p>
+                        const newParagraph = document.createElement("p");
+                    
+                        // Ajoute le contenu au nouveau paragraphe
+                        newParagraph.textContent = "Contenu du nouveau paragraphe";
+                    
+                        // Ajoute le nouveau paragraphe à l'élément parent
+                        parentElement.appendChild(newParagraph);
+                </code>
+            </p>
+            <p>
+                Gérer les événements utilisateur :
+
+                <code>
+                    // Sélectionne un bouton
+                    const button = document.querySelector("#submit-button");
+                    
+                    // Ajoute un écouteur d'événement "click" au bouton
+                    button.addEventListener("click", function() {
+                    console.log("Bouton cliqué");
+                    });
+                </code>
+            </p>
+            <p>
+                Modifier les styles d'un élément :
+
+                <code>
+                    // Sélectionne un élément
+                    const element = document.querySelector("#element-id");
+                    
+                    // Modifie la couleur de fond de l'élément
+                    element.style.backgroundColor = "red";
+                </code>
+            </p>
+            <p>
+                Maintenant, voici comment le DOM est utilisé dans les projets web modernes.
+                Le DOM est largement utilisé pour créer des interfaces utilisateur interactives et dynamiques, 
+                comme les menus déroulants, les galeries d'images et les formulaires. Il est également utilisé pour gérer
+                les interactions utilisateur, comme les clics sur des boutons et les entrées de formulaire.
+                Il est souvent utilisé en conjonction avec JavaScript pour ajouter des fonctionnalités interactives à une page web.
+            </p>
+            <p>
+                Il existe également de nombreuses bibliothèques et frameworks qui facilitent l'utilisation du DOM pour créer des
+                interfaces utilisateur interactives. Par exemple, jQuery est une bibliothèque populaire qui simplifie l'accès et la
+                manipulation des éléments du DOM. Il existe également des frameworks tels que React et Angular qui utilisent le DOM pour
+                gérer l'état et les mises à jour de l'interface utilisateur.
+            </p>
+            <p>
+                Ce sont des exemples basiques d'utilisation du DOM, Il existe beaucoup d'autres fonctionnalités et méthodes qui
+                peuvent
+                être utilisées pour manipuler les éléments de la page.
+                Il est important de noter que le DOM est un standard qui est compatible avec tous les navigateurs modernes.
+            </p>
+            <p>
+                En résumé, le DOM est un outil incroyable pour les développeurs web qui permet de manipuler les éléments d'une page web.
+                Il est largement utilisé dans les projets web modernes pour créer des interfaces utilisateur interactives et gérer les
+                interactions utilisateur. Les bibliothèques et les frameworks populaires tels que jQuery, React et Angular facilitent
+                également l'utilisation du DOM pour créer des interfaces utilisateur interactives.
+
+                Enfin, je vous laisse avec une petite blague pour finir cette présentation, "Comment appelle-t-on un DOM qui a des
+                problèmes de mémoire ? Un DOM-tique!"
+
+                En espérant vous avoir aidé à comprendre le DOM et merci d'avoir suivi cette présentation !
+            </p>
+        </article>
+    </main>
+</body>
+</html>
